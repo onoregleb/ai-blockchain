@@ -387,7 +387,7 @@ if __name__ == "__main__":
             "first_token_tx_date", "last_token_tx_date", "token_interactions"
         ]
         df = df.reindex(columns=[col for col in column_order if col in df.columns])
-        filename = f"ethereum_clustering_dataset_link.csv"
+        filename = f"dataset_link.csv"
         df.to_csv(filename, index=False, date_format='%Y-%m-%d %H:%M:%S')
         print(f"\nData saved successfully to {filename}")
 
